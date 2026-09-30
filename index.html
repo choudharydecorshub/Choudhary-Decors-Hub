@@ -17,13 +17,57 @@
         .call-btn { background: #e67e22; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-weight: 600; }
         
         /* Hero Section */
-        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url![IMG-20260928-WA0534.jpg](https://github.com/user-attachments/assets/180f7312-8e38-4efe-9540-0e6e802f3430)
+        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('wedding_decor.jpg') center/cover no-repeat; color: white; text-align: center; padding: 100px 20px; }
+        .hero h1 { font-size: 38px; margin-bottom: 15px; color: #f1c40f; }
+        .hero p { font-size: 18px; max-width: 600px; margin: 0 auto 25px; }
+        .cta-btn { background: #25D366; color: white; padding: 12px 25px; border-radius: 30px; text-decoration: none; font-size: 18px; font-weight: 600; display: inline-block; transition: 0.3s; }
+        .cta-btn:hover { background: #1eb854; transform: translateY(-3px); }
 
-/user-attachments/assets/cbd454b5-8c3d-4c04-93ee-2a69ae5cc1c5)
+        /* Container & Cards */
+        .container { width: 90%; max-width: 1100px; margin: 40px auto; }
+        .section-title { text-align: center; font-size: 28px; margin-bottom: 30px; position: relative; }
+        .section-title::after { content: ''; width: 60px; height: 3px; background: #f39c12; display: block; margin: 8px auto 0; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.08); text-align: center; padding: 20px; }
+        .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
+        .card h3 { margin-bottom: 10px; color: #2c3e50; }
+        .card p { font-size: 14px; color: #666; margin-bottom: 15px; }
+        
+        /* Contact Section */
+        .info-box { background: white; padding: 25px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.08); margin-top: 30px; }
+        .info-box i { font-size: 30px; color: #e67e22; margin-bottom: 10px; }
 
-![IMG-20260928-WA0531.jpg](https://github.com/user-attachments/assets/656192fb-5d1a-490f-b43e-18c94724ef72)
+        /* Floating WhatsApp Button */
+        .float-wa { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; text-decoration: none; }
+    </style>
+</head>
+<body>
 
-%20Decor" class="cta-btn" style="padding:8px 15px; font-size:14px;">Order on WhatsApp</a>
+    <!-- Header -->
+    <header>
+        <div class="logo">Choudhary Decors Hub</div>
+        <a href="tel:8057418879" class="call-btn"><i class="fas fa-phone"></i> Call Us</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Choudhary Decors Hub</h1>
+        <p>Chandeliers, Ceiling Lights, Sofas, Chairs & Baby Cycles - All Decoration Items Available!</p>
+        <a href="https://wa.me/918057418879?text=Hi,%20I%20want%20to%20inquire%20about%20decor%20items" class="cta-btn"><i class="fab fa-whatsapp"></i> Get Price on WhatsApp</a>
+    </section>
+
+    <!-- Products & Services -->
+    <div class="container">
+        <h2 class="section-title">Our Products & Services</h2>
+        <div class="grid">
+            
+            <div class="card">
+                <div class="card-body">
+                    <img src="wedding_decor.jpg" alt="Wedding Decor">
+                    <h3>Grand Wedding Decor</h3>
+                    <p>Grand stage and mandap decoration packages for weddings and special events.</p>
+                    <a href="https://wa.me/918057418879?text=Hi,%20I%20want%20to%20inquire%20about%20Wedding%20Decor" class="cta-btn" style="padding:8px 15px; font-size:14px;">Order on WhatsApp</a>
                 </div>
             </div>
 
@@ -49,7 +93,7 @@
         <div class="info-box">
             <i class="fas fa-map-marker-alt"></i>
             <h3>Our Address</h3>
-            <p>Meerut,uttar pradesh, 250001</p>
+            <p>Meerut,uttarpradesh 250001</p>
         </div>
     </div>
 
@@ -60,3 +104,4 @@
 
 </body>
 </html>
+
