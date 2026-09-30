@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>चौधरी डेकोर्स हब - Choudhary Decors Hub</title>
+    <title>Choudhary Decors Hub</title>
     <!-- Google Fonts & FontAwesome Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -14,125 +14,93 @@
         /* Header & Navigation */
         header { background: #1a1a1a; color: #fff; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .logo { font-size: 24px; font-weight: 700; color: #f39c12; }
-        .contact-top a { color: #fff; text-decoration: none; font-weight: 600; background: #e67e22; padding: 8px 15px; border-radius: 5px; }
-
-        /* Hero Banner */
-        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1543198181-e61972927051?auto=format&fit=crop&w=1200&q=80') center/cover; color: #fff; text-align: center; padding: 100px 20px; }
-        .hero h1 { font-size: 42px; margin-bottom: 10px; color: #f1c40f; }
-        .hero p { font-size: 18px; margin-bottom: 20px; }
-        .btn-whatsapp { background-color: #25D366; color: white; padding: 12px 25px; text-decoration: none; font-size: 18px; font-weight: bold; border-radius: 30px; display: inline-block; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-
-        /* Products Section */
-        .products { padding: 50px 5%; text-align: center; }
-        .products h2 { font-size: 32px; margin-bottom: 30px; position: relative; display: inline-block; }
-        .products h2::after { content: ''; width: 50%; height: 3px; background: #f39c12; position: absolute; bottom: -5px; left: 25%; }
+        .call-btn { background: #e67e22; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-weight: 600; }
         
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 20px; }
-        .card { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s ease; }
-        .card:hover { transform: translateY(-5px); }
-        .card-body { padding: 20px; }
-        .card-body h3 { font-size: 20px; color: #2c3e50; margin-bottom: 10px; }
-        .card-body p { color: #7f8c8d; font-size: 14px; }
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('wedding_decor.jpg') center/cover no-repeat; color: white; text-align: center; padding: 100px 20px; }
+        .hero h1 { font-size: 38px; margin-bottom: 15px; color: #f1c40f; }
+        .hero p { font-size: 18px; max-width: 600px; margin: 0 auto 25px; }
+        .cta-btn { background: #25D366; color: white; padding: 12px 25px; border-radius: 30px; text-decoration: none; font-size: 18px; font-weight: 600; display: inline-block; transition: 0.3s; }
+        .cta-btn:hover { background: #1eb854; transform: translateY(-3px); }
 
-        /* About & Contact Section */
-        .info-section { background: #fff; padding: 50px 5%; margin-top: 30px; }
-        .info-container { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px; }
-        .info-box { flex: 1; min-width: 280px; }
-        .info-box h3 { font-size: 22px; color: #2c3e50; margin-bottom: 15px; border-bottom: 2px solid #f39c12; padding-bottom: 5px; }
-
-        /* Footer */
-        footer { background: #1a1a1a; color: #aaa; text-align: center; padding: 20px; margin-top: 40px; }
+        /* Container & Cards */
+        .container { width: 90%; max-width: 1100px; margin: 40px auto; }
+        .section-title { text-align: center; font-size: 28px; margin-bottom: 30px; position: relative; }
+        .section-title::after { content: ''; width: 60px; height: 3px; background: #f39c12; display: block; margin: 8px auto 0; }
         
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.08); text-align: center; padding: 20px; }
+        .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
+        .card h3 { margin-bottom: 10px; color: #2c3e50; }
+        .card p { font-size: 14px; color: #666; margin-bottom: 15px; }
+        
+        /* Contact Section */
+        .info-box { background: white; padding: 25px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.08); margin-top: 30px; }
+        .info-box i { font-size: 30px; color: #e67e22; margin-bottom: 10px; }
+
         /* Floating WhatsApp Button */
-        .float-wa { position: fixed; width: 60px; height: 60px; bottom: 20px; right: 20px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 2px 2px 3px #999; z-index: 100; display: flex; align-items: center; justify-content: center; text-decoration: none; }
+        .float-wa { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; text-decoration: none; }
     </style>
 </head>
 <body>
 
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/918218087380?text=नमस्ते%20Shan%20mohd%20जी,%20मुझे%20डेकोरेशन%20सामान%20की%20जानकारी%20चाहिए।" class="float-wa" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
     <!-- Header -->
     <header>
-        <div class="logo">चौधरी डेकोर्स हब</div>
-        <div class="contact-top">
-            <a href="tel:8057418879"><i class="fas fa-phone"></i> कॉल करें: 8057418879</a>
-        </div>
+        <div class="logo">Choudhary Decors Hub</div>
+        <a href="tel:8057418879" class="call-btn"><i class="fas fa-phone"></i> Call Us</a>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>चौधरी डेकोर्स हब</h1>
-        <p>झूमर, सीलिंग लाइट्स, सोफा, चेयर एवं बेबी साइकिल - डेकोरेशन के सभी आइटम उपलब्ध हैं!</p>
-        <a href="https://wa.me/918218087380?text=नमस्ते,%20मुझे%20सामान%20की%20रेट%20लिस्ट%20चाहिए।" class="btn-whatsapp" target="_blank">
-            <i class="fab fa-whatsapp"></i> व्हाट्सएप पर रेट पूछें
-        </a>
+        <h1>Choudhary Decors Hub</h1>
+        <p>Chandeliers, Ceiling Lights, Sofas, Chairs & Baby Cycles - All Decoration Items Available!</p>
+        <a href="https://wa.me/918057418879?text=Hi,%20I%20want%20to%20inquire%20about%20decor%20items" class="cta-btn"><i class="fab fa-whatsapp"></i> Get Price on WhatsApp</a>
     </section>
 
-    <!-- Products Section -->
-    <section class="products">
-        <h2>हमारे प्रॉडक्ट्स एवं सर्विसेज़</h2>
+    <!-- Products & Services -->
+    <div class="container">
+        <h2 class="section-title">Our Products & Services</h2>
         <div class="grid">
+            
             <div class="card">
                 <div class="card-body">
-                    <i class="fas fa-lightbulb" style="font-size: 40px; color: #f39c12; margin-bottom: 10px;"></i>
-                    <h3>झूमर एवं सीलिंग डेकोरेशन</h3>
-                    <p>क्रिस्टल झूमर, फैंसी सीलिंग लाइट्स एवं हैंगिंग लाइट्स का बेहतरीन कलेक्शन।</p>
+                    <img src="wedding_decor.jpg" alt="Wedding Decor">
+                    <h3>Grand Wedding Decor</h3>
+                    <p>Grand stage and mandap decoration packages for weddings and special events.</p>
+                    <a href="https://wa.me/918057418879?text=Hi,%20I%20want%20to%20inquire%20about%20Wedding%20Decor" class="cta-btn" style="padding:8px 15px; font-size:14px;">Order on WhatsApp</a>
                 </div>
             </div>
+
             <div class="card">
                 <div class="card-body">
                     <i class="fas fa-couch" style="font-size: 40px; color: #f39c12; margin-bottom: 10px;"></i>
-                    <h3>सोफा एवं चेयर</h3>
-                    <p>घर और इवेंट डेकोरेशन के लिए आकर्षक और आरामदायक सोफा एवं कुर्सियां।</p>
+                    <h3>Sofas & Chairs</h3>
+                    <p>Attractive and comfortable sofas and chairs for home and event decoration.</p>
                 </div>
             </div>
+
             <div class="card">
                 <div class="card-body">
                     <i class="fas fa-bicycle" style="font-size: 40px; color: #f39c12; margin-bottom: 10px;"></i>
-                    <h3>बेबी साइकिल</h3>
-                    <p>बच्चों के लिए फैंसी और मजबूत बेबी साइकिल की वैरायटी।</p>
-                </div><!-- नया प्रोडक्ट: शानदार वेडिंग डेकोर -->
-<div class="product-card">
-    <img src="आपकी_फोटो_का_नाम.jpg" alt="वेडिंग डेकोर">
-    <h3>शानदार वेडिंग डेकोर पैकेट</h3>
-    <p class="price">कीमत के लिए पूछें</p>
-    <a href="https://wa.me/918057418879?text=नमस्ते,%20मुझे%20यह%20वेडिंग%20डेकोर%20आइटम%20खरीदना%20है" class="btn">WhatsApp पर ऑर्डर करें</a>
-</div>
-
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <i class="fas fa-magic" style="font-size: 40px; color: #f39c12; margin-bottom: 10px;"></i>
-                    <h3>डेकोरेशन के सभी सामान</h3>
-                    <p>शादी, पार्टी एवं होम डेकोरेशन के लिए सभी प्रकार के डेकोरेटिव आइटम्स।</p>
+                    <h3>Baby Cycles</h3>
+                    <p>Fancy and durable variety of baby cycles for kids.</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Contact & Address Section -->
-    <section class="info-section">
-        <div class="info-container">
-            <div class="info-box">
-                <h3>संपर्क करें (Contact Details)</h3>
-                <p><strong>प्रोप्राइटर:</strong> Shan mohd</p>
-                <p><strong>कॉल नंबर:</strong> <a href="tel:8057418879">8057418879</a></p>
-                <p><strong>व्हाट्सएप नंबर:</strong> <a href="https://wa.me/918218087380">8218087380</a></p>
-            </div>
-            <div class="info-box">
-                <h3>हमारा पता (Address)</h3>
-                <p><i class="fas fa-map-marker-alt" style="color: #e67e22;"></i> जसौरी, मेरठ, उत्तर प्रदेश (Jasori, Meerut, Uttar Pradesh)</p>
-            </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 चौधरी डेकोर्स हब | सर्वाधिकार सुरक्षित</p>
-    </footer>
+        <!-- Address & Contact -->
+        <div class="info-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Our Address</h3>
+            <p>Main Market, City Name, State - PIN Code</p>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/918057418879?text=Hi,%20I%20visited%20your%20website" class="float-wa" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
 </body>
 </html>
